@@ -16,4 +16,25 @@ var date = new Date();
 window.alert(date)
 ```
 
-哎。。。
+```http
+GET / HTTP/1.1
+Host: my.server.com
+```
+
+```
+common block
+with
+many
+lines
+```
+
+    a tranditional
+    block
+    with suo jin
+    before
+
+`inline`
+
+a `common inline code` that needn't parse.
+
+秘诀[在此](http://xingrz.us/assets/themes/xingrz/js/fenced-code-blocks.js)。

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/highlight.css">
 
     <script src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="{{ ASSET_PATH }}/js/global.js"></script>
     <script src="{{ ASSET_PATH }}/js/fenced-code-blocks.js"></script>
   </head>
   <body>
@@ -33,8 +34,8 @@
         {% endif %}
             </ul>
           </li>
-      {% elseif page.url == node.url %}
-          <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+      {% elsif page.url == node.url %}
+          <li class="active"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
       {% else %}
           <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
       {% endif %}
@@ -45,7 +46,9 @@
       </nav>
     </header>
 
+    <div class="site-wrapper">
 {{ content }}
+    </div>
 
     <footer class="site-footer">
       <div class="license">

@@ -16,7 +16,7 @@
       <div class="brand"><a href="/">{{ site.title }}</a></div>
       <nav>
         <ul>
-{% page.url == "/index.html" %}
+{% if page.url == "/index.html" %}
           <li class="active"><a href="/index.html">首页</a></li>
 {% else %}
           <li><a href="/index.html">首页</a></li>

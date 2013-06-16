@@ -15,37 +15,23 @@
     <header class="site-header">
       <div class="brand"><a href="/">{{ site.title }}</a></div>
       <nav>
-        <ul>
-{% if page.url == "/index.html" %}
-          <li class="active"><a href="/index.html">首页</a></li>
-{% else %}
-          <li><a href="/index.html">首页</a></li>
-{% endif %}
-{% for node in site.pages %}
-  {% if node.title != null and node.group == "navigation" and node.url != "/index.html" %}
-    {% if node.url == site.JB.categories_path %}
-          <li>
+        <ul>{% for node in site.pages %}{% if node.title != null and node.group == "navigation" %}
+          {% if node.url == site.JB.categories_path %}<li>
             <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a>
-            <ul>
-      {% if site.categories.first[0] == null %}
-        {% for category in site.categories %}
+            <ul>{% if site.categories.first[0] == null %}
+              {% for category in site.categories %}
               <li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ category | join: "/" }}</a></li>
-        {% endfor %}
-      {% else %}
-        {% for category in site.categories %}
+              {% endfor %}
+            {% else %}
+              {% for category in site.categories %}
               <li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">{{ category[0] | join: "/" }}</a></li>
-        {% endfor %}
-      {% endif %}
-            </ul>
+              {% endfor %}
+            {% endif %}</ul>
           </li>
-    {% elsif page.url == node.url %}
-          <li class="active"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-    {% else %}
-          <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-        </ul>
+          {% elsif page.url == node.url %}<li class="active"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+          {% else %}<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+          {% endif %}
+        {% endif %}{% endfor %}</ul>
       </nav>
     </header>
 

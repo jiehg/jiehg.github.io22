@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "第一篇文章"
-category:
+category: 杂谈
 tags: []
+title: "第一篇文章"
 ---
 {% include JB/setup %}
 

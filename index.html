@@ -1,0 +1,20 @@
+---
+layout: page
+title: 首页
+---
+{% include JB/setup %}
+
+{% for post in site.posts limit 100 %}
+    <section class="site-abstract">
+      <header>
+        <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+      </header>
+      <div class="abstract">
+{{ post.content }}
+      </div>
+      <footer>
+        发表于 <time>{{ post.date | date: "%Y/%m/%d" }}</time>
+        <a href="{{ BASE_PATH }}{{ post.url }}">阅读全文</a>
+      </footer>
+    </section>
+{% endfor %}

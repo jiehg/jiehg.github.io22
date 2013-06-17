@@ -218,6 +218,39 @@ a:hover {
   padding: 0;
 }
 
+
+.site-abstract {
+  border-bottom: 1px solid #DDD;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.site-abstract > header {
+  border-bottom: 1px solid #EEE;
+  padding: 0 0 10px;
+}
+
+.site-abstract > header h1 {
+  margin: 0;
+  font-size: 170%;
+  font-weight: normal;
+}
+
+.site-abstract > header h1 a {
+  color: #333;
+}
+
+.site-abstract > .abstract h2 {
+  font-size: 150%
+}
+
+.site-abstract > footer {
+  font-size: 85%;
+  color: #777;
+  margin-top: 20px;
+}
+
+
 /**
  * Site Footer
  */

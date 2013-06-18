@@ -18,7 +18,7 @@ tagline: 有时发博客，有时发牢骚。
       </div>
 {% endif %}
       <footer>
-        发表于 <time>{{ post.date | date: "%Y/%m/%d" }}</time>
+        发表于 <time pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time>
         <a href="{{ BASE_PATH }}{{ post.url }}">阅读全文</a>
       </footer>
     </section>

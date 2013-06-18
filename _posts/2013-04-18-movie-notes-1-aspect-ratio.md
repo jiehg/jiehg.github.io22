@@ -46,6 +46,6 @@ DVD则采用变形的方式储存宽屏的画面。
 
 ----------
 
-回顾上一篇：[影视技术笔记：（零）开篇](/2013/2013-04-18-movie-notes-0-launch.html)
+回顾上一篇：[影视技术笔记：（零）开篇](/2013/2013-04-18/movie-notes-0-launch.html)
 
 欢迎通过微博[@SINGYUCHAN](http://weibo.com/xingrz)交流。

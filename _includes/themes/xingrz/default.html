@@ -2,8 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+{%  if page.url == "/index.html" and page.tagline != null %}
+    <title>{{ site.title }} :: {{ page.tagline }}</title>
+{%  else %}
     <title>{{ page.title }} :: {{ site.title }}</title>
-
+{%  endif %}
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/highlight.css">
 

@@ -239,6 +239,15 @@ a:hover {
   color: #777;
 }
 
+.site-content > footer {
+  border-top: 1px solid #DFDFDF;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+/**
+ * Site Abstract
+ */
 
 .site-abstract {
   margin: 20px 0;

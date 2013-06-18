@@ -1,7 +1,7 @@
 ---
 layout: post
 category: 开发
-tags: [Web, Nginx]
+tags: [Web, RESTful, Nginx]
 title: 再谈 RESTful API：版本化的实现
 ---
 

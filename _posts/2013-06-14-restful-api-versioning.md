@@ -5,7 +5,7 @@ tags: [Web, Nginx]
 title: 再谈 RESTful API：版本化的实现
 ---
 
-[上一篇](/2013/2013-06-14/restful-api.html)只是写了个大概，上课无聊再写写实现之类的事情。
+[上一篇](/2013/2013-06-13/restful-api.html)只是写了个大概，上课无聊再写写实现之类的事情。
 
 版本化对于 API 的发展是好事。
 
@@ -42,4 +42,4 @@ location / {
 
 ----------
 
-传送门：[总结一下 RESTful API 的设计](/2013/2013-06-14/restful-api.html)
+传送门：[总结一下 RESTful API 的设计](/2013/2013-06-13/restful-api.html)

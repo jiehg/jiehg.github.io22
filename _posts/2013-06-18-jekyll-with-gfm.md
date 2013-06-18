@@ -11,7 +11,7 @@ title: Jekyll + GFM
 
 编辑 `_config.yml`，加上一句：
 
-```yml
+```yaml
 markdown: redcarpet
 ```
 

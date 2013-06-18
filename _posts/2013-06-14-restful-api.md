@@ -1,7 +1,7 @@
 ---
 layout: post
 category: 开发
-tags: [Web]
+tags: [Web, RESTful]
 title: 总结一下 RESTful API 的设计
 ---
 

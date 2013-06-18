@@ -1,3 +1,10 @@
+---
+layout: post
+category: 开发
+tags: [Web]
+title: 总结一下 RESTful API 的设计
+---
+
 在伯乐在线看到了一篇不错的[文章](http://blog.jobbole.com/41233/)，结合之前的实践总结一下。
 
 不断编辑中。

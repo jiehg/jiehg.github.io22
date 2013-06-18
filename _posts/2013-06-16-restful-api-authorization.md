@@ -1,7 +1,7 @@
 ---
 layout: post
 category: 开发
-tags: [Web]
+tags: [Web, RESTful, OAuth2]
 title: 继续谈 RESTful API：关于鉴权
 ---
 

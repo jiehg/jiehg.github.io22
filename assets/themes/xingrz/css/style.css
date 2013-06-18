@@ -263,7 +263,6 @@ a:hover {
 }
 
 .site-abstract > .abstract {
-
 }
 
 .site-abstract > .full {
@@ -273,6 +272,12 @@ a:hover {
 
 .site-abstract > .full h2 {
   font-size: 150%
+}
+
+.site-abstract > .full pre,
+.site-abstract > .full p > code {
+  background-color: #F7F7F7;
+  border-color: #EEE;
 }
 
 .site-abstract > footer {

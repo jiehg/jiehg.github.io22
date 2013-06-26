@@ -223,10 +223,16 @@ a:hover {
 .site-content > .content pre {
   overflow: hidden;
   line-height: 20px;
+  background: #F2F2F2;
+  border: 1px solid #DDD;
+  border-radius: 2px;
+  padding: 10px;
 }
 
 .site-content > .content pre > code {
-  padding: 10px;
+  background: none;
+  border: none;
+  padding: none;
 }
 
 .site-content > .content blockquote {

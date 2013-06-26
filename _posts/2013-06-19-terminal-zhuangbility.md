@@ -36,10 +36,8 @@ title: 折腾了一下 Terminal
 系统自带了 4.0 版的 zsh，但我们可以用 `brew install` 安装最新的 5.X。
 
 ```sh
-sudo brew install zsh
-sudo mv /bin/zsh /bin/zsh.old    # 备份系统原有的 zsh
-sudo ln -s /usr/local/Cellar/zsh/版本号/bin/zsh /bin/zsh
-chsh -s /bin/zsh    # 切换系统当前用户的默认 shell 为 zsh
+brew install zsh
+chsh -s `brew --prefix zsh`/bin/zsh  # 切换系统当前用户的默认 shell 为 zsh
 ```
 
 安装完毕，`Command + W` 关闭 iTerm2 当前窗口，然后按 `Command + .` 重新打开，此时 shell 已经换成 zsh 了。
@@ -67,5 +65,18 @@ plugins=(git brew node npm)   # 自己按需把要用的 plugin 写上
 ```
 
 其中插件可以看[这里](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)。
+
+另外，建议把末尾的 `export PATH` 稍微调整一下，比如 Homebrew 就建议 `/usr/local/bin` 应该优先于 `/usr/bin`；另外也可以自己加上比如 Ruby Gems 目录 `/usr/local/opt/ruby/bin`、Node.js NPM 目录 `~/bin` 等。
+
+```sh
+export PATH=/usr/local/bin:/usr/local/sbin/:$HOME/bin:$PATH
+```
+
+关于 Homebrew 的路径，比如 zsh 这个包可以通过 `brew --prefix zsh` 知道它的目录是 `/usr/local/opt/zsh`，关于这些链接：
+
+* `/usr/local/opt/zsh` 目录 -> `/usr/local/Cellar/zsh/版本号` 目录
+* `/usr/local/bin/zsh` 文件 -> `/usr/local/Cellar/zsh/版本号/bin/zsh` 文件
+
+所以就有了上面那条 `chsh -s` 命令的写法。
 
 重新打开 iTerm2 窗口，配置完成~

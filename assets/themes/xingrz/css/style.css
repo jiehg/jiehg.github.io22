@@ -213,23 +213,20 @@ a:hover {
 .site-content > .content code {
   font-family: 'Ubuntu Mono', Consolas, 'Liberation Mono', Courier, monospace;
   font-size: 14px;
-}
-
-.site-content > .content pre {
   background: #F2F2F2;
   border: 1px solid #DDD;
   border-radius: 2px;
-  padding: 10px;
+  white-space: nowrap;
+  padding: 0 5px;
+}
+
+.site-content > .content pre {
   overflow: hidden;
   line-height: 20px;
 }
 
-.site-content > .content p > code {
-  background: #F2F2F2;
-  border: 1px solid #DDD;
-  border-radius: 2px;
-  padding: 0 5px;
-  white-space: nowrap;
+.site-content > .content pre > code {
+  padding: 10px;
 }
 
 .site-content > .content blockquote {

@@ -232,7 +232,8 @@ a:hover {
 .site-content > .content pre > code {
   background: none;
   border: none;
-  padding: none;
+  white-space: pre;
+  padding: 0;
 }
 
 .site-content > .content blockquote {

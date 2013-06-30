@@ -37,7 +37,9 @@ title: 折腾了一下 Terminal
 
 ```sh
 brew install zsh
-chsh -s `brew --prefix zsh`/bin/zsh  # 切换系统当前用户的默认 shell 为 zsh
+sudo rm /bin/zsh    # 替换系统自带 zsh
+sudo ln -s `brew --prefix zsh`/bin/zsh /bin/zsh
+chsh -s /bin/zsh  # 切换系统当前用户的默认 shell 为 zsh
 ```
 
 安装完毕，`Command + W` 关闭 iTerm2 当前窗口，然后按 `Command + .` 重新打开，此时 shell 已经换成 zsh 了。

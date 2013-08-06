@@ -31,6 +31,4 @@ title: 又是一些 Express.js Middleware
   
   同样也是一个经常用到的片段的封装。
 
-----------
-
 好吧，照着Connect 在 GitHub 上的 Wiki 页翻了这么几个 Middleware。[TJ 大神](https://github.com/visionmedia)是一位神一般的大神（这句话。。。），他开源的项目：Connect、Express、Mongoose、Component、Mocha、Should。没错，从前端到后端、从数据库到单元测试一条龙服务 OTL。

@@ -212,19 +212,17 @@ a:hover {
 
 .site-content > .content code {
   font-family: 'Ubuntu Mono', Consolas, 'Liberation Mono', Courier, monospace;
-  font-size: 14px;
-  background: #F2F2F2;
-  border: 1px solid #DDD;
+  font-size: 90%;
+  background: #F0F0F0;
   border-radius: 2px;
   white-space: nowrap;
-  padding: 0 5px;
+  padding: 2px 5px;
 }
 
 .site-content > .content pre {
   overflow: hidden;
   line-height: 20px;
-  background: #F2F2F2;
-  border: 1px solid #DDD;
+  background: #F0F0F0;
   border-radius: 2px;
   padding: 10px;
 }

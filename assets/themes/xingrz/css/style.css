@@ -263,17 +263,17 @@ a:hover {
  */
 
 .site-abstract {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .site-abstract > header h1 {
   margin: 0;
-  font-size: 150%;
-  font-weight: normal;
+  font-size: 140%;
+  font-weight: bold;
 }
 
 .site-abstract > header h1 a {
-  color: #333;
+  color: #556;
   /* reset from .site-content > content */
   border: none !important;
   transition: color 500ms !important;
@@ -291,12 +291,13 @@ a:hover {
 .site-abstract > .full > * {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  font-size: 100%;
+  font-size: 100% !important;
+  color: #778;
 }
 
 .site-abstract > footer {
-  font-size: 85%;
-  color: #777;
+  font-size: 80%;
+  color: #778;
 }
 
 .site-abstract > footer a {

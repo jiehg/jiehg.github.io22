@@ -209,6 +209,16 @@ a:hover {
   margin: 0;
 }
 
+.site-content > .content a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: border-bottom-color 500ms;
+}
+
+.site-content > .content a:hover {
+  border-bottom-color: #4080C0;
+  text-decoration: none;
+}
+
 .site-content > .content code {
   font-family: 'Ubuntu Mono', Consolas, 'Liberation Mono', Courier, monospace;
   font-size: 90%;
@@ -282,6 +292,16 @@ a:hover {
 
 .site-abstract > .full h2 {
   font-size: 150%
+}
+
+.site-abstract > .full a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: border-bottom-color 500ms;
+}
+
+.site-abstract > .full a:hover {
+  border-bottom-color: #4080C0;
+  text-decoration: none;
 }
 
 .site-abstract > .full pre,

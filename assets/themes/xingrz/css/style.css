@@ -273,7 +273,7 @@ a:hover {
 }
 
 .site-abstract > header {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .site-abstract > header h1 {
@@ -293,11 +293,6 @@ a:hover {
   color: #4080C0;
 }
 
-.site-abstract > .abstract,
-.site-abstract > .full {
-  line-height: 1.0;
-}
-
 .site-abstract > .full > :not(:first-child),
 .site-abstract > .full > :not(p) {
   display: none !important;
@@ -307,11 +302,12 @@ a:hover {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   font-size: 100% !important;
+  line-height: 1.0 !important;
   color: #778;
 }
 
 .site-abstract > footer {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 80%;
   color: #778;
 }

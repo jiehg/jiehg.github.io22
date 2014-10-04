@@ -70,16 +70,17 @@ a:hover {
   display: block;
   padding: 15px 50px;
   color: #777;
+  transition: background-color 500ms;
 }
 
 .site-header nav ul > li > a:hover {
-  background: #F5F5F5;
+  background-color: rgba(0, 0, 0, 0.03);
   color: #4080C0;
   text-decoration: none;
 }
 
 .site-header nav ul > li.active > a {
-  background: #EEE;
+  background: rgba(0, 0, 0, 0.05);
   color: #4080C0;
   border-left: 5px solid #4080C0;
   margin-left: -5px;
@@ -100,7 +101,7 @@ a:hover {
 }
 
 .site-wrapper {
-  background: #F9F9F9;
+  background: #FCFCFC;
   padding: 20px 50px 100px 350px;
 }
 

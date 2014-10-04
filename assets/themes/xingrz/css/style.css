@@ -247,11 +247,15 @@ a:hover {
 }
 
 .site-content > .content blockquote {
-  font-size: inherit;
+  font-size: 90%;
   padding-left: 1.6em;
   padding-right: 2em;
   border-left: 0.4em solid #CCC;
   color: #777;
+}
+
+.site-content > .content blockquote * {
+  font-size: inherit;
 }
 
 .site-content > footer {

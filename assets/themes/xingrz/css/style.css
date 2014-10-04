@@ -268,7 +268,7 @@ a:hover {
 
 .site-abstract > header h1 {
   margin: 0;
-  font-size: 170%;
+  font-size: 150%;
   font-weight: normal;
 }
 
@@ -283,19 +283,24 @@ a:hover {
   color: #4080C0;
 }
 
-.site-abstract > .full > :not(:first-child) {
+.site-abstract > .full > :not(:first-child),
+.site-abstract > .full > :not(p) {
   display: none !important;
 }
 
 .site-abstract > .full > * {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 .site-abstract > footer {
   font-size: 85%;
   color: #777;
+}
+
+.site-abstract > footer a {
+  border: none !important;
 }
 
 

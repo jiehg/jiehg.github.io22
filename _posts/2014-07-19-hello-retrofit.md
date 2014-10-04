@@ -11,7 +11,7 @@ title: Retrofit 备忘
 
 > 在 21 世纪 10 年代还需要自己拷贝 jar 包的库都是耍流氓。—— 我说的
 
-```gradle
+```groovy
 dependencies {
     compile 'com.squareup.retrofit:retrofit:1.6.1'
 }

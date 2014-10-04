@@ -264,14 +264,6 @@ a:hover {
 
 .site-abstract {
   margin: 20px 0;
-  background: #FCFCFC;
-  padding: 20px 30px;
-  border: 1px solid #EEE;
-}
-
-.site-abstract > header {
-  border-bottom: 1px solid #EEE;
-  padding: 0 0 10px;
 }
 
 .site-abstract > header h1 {
@@ -291,27 +283,19 @@ a:hover {
   color: #4080C0;
 }
 
-.site-abstract > .abstract {
+.site-abstract > .full > :not(:first-child) {
+  display: none !important;
 }
 
-.site-abstract > .full {
-  overflow-y: hidden;
-  max-height: 400px;
-}
-
-.site-abstract > .full h2 {
-  font-size: 150%
-}
-
-.site-abstract > .full pre,
-.site-abstract > .full p > code {
-  background-color: #F7F7F7;
+.site-abstract > .full > * {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 120%;
 }
 
 .site-abstract > footer {
   font-size: 85%;
   color: #777;
-  margin-top: 20px;
 }
 
 

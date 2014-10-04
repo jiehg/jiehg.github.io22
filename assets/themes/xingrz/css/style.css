@@ -23,6 +23,12 @@ a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 /**
  * Site Header
  */
@@ -33,6 +39,7 @@ a:hover {
   top: 0;
   width: 250px;
   background: #FFF;
+  border-bottom: 5px solid #EEE;
 }
 
 .site-header .brand {
@@ -52,10 +59,6 @@ a:hover {
   background: #4585C5;
 }
 
-.site-header nav {
-  border-bottom: 5px solid #EEE;
-}
-
 .site-header nav ul {
   list-style: none;
   margin: 0;
@@ -68,7 +71,8 @@ a:hover {
 
 .site-header nav ul > li > a {
   display: block;
-  padding: 15px 50px;
+  padding: 0 50px;
+  line-height: 50px;
   color: #777;
   transition: background-color 500ms;
 }
@@ -90,7 +94,6 @@ a:hover {
   border-left-color: #4585C5;
 }
 
-
 .site-header nav ul > li > ul {
   padding: 0;
 }
@@ -105,6 +108,109 @@ a:hover {
   padding: 20px 50px 100px 350px;
 }
 
+@media (max-width: 1080px) {
+  .site-header {
+    left: 0;
+    top: 0;
+    right: 0;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .site-header .brand {
+    float: left;
+    width: 200px;
+    border-bottom: 5px solid #4080C0;
+    margin-bottom: -5px;
+  }
+
+  .site-header .brand > a {
+    line-height: 50px;
+  }
+
+  .site-header nav {
+    margin-left: 200px;
+  }
+
+  .site-header nav ul {
+    padding: 0;
+  }
+
+  .site-header nav ul > li {
+    display: inline-block;
+  }
+
+  .site-header nav ul > li > a {
+    display: inline-block;
+    padding: 0 30px;
+  }
+
+  .site-header nav ul > li.active > a {
+    border-left: none;
+    margin-left: 0;
+    border-bottom: 5px solid #4080C0;
+    margin-bottom: -5px;
+  }
+
+  .site-header nav ul > li > ul {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+  }
+
+  .site-header nav ul > li > ul > li > a {
+    padding: 0 20px;
+    font-size: 95%;
+  }
+
+  .site-wrapper {
+    padding: 70px 50px 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .site-header .brand {
+    font-size: 120%;
+    width: 120px;
+  }
+
+  .site-header nav {
+    margin-left: 120px;
+  }
+
+  .site-header nav ul > li > a {
+    padding: 0 10px;
+  }
+
+  .site-header nav ul > li > ul > li > a {
+    padding: 0 10px;
+  }
+
+  .site-wrapper {
+    padding: 70px 20px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header .brand {
+    overflow: hidden;
+    width: 50px;
+  }
+
+  .site-header .brand > a {
+    width: 0;
+    padding-left: 50px;
+  }
+
+  .site-header nav {
+    margin-left: 50px;
+  }
+
+  .site-wrapper {
+    padding: 70px 10px 10px;
+  }
+}
+
+
 /**
  * Site Content
  */
@@ -118,7 +224,7 @@ a:hover {
   display: block;
   border-bottom: 1px solid #DFDFDF;
   padding-bottom: 10px;
-  height: 69px;
+  min-height: 69px;
 }
 
 .site-content > header h1 {
@@ -267,6 +373,45 @@ a:hover {
   padding-top: 20px;
 }
 
+@media (max-width: 1080px) {
+  .site-content {
+    max-width: none;
+  }
+
+  .site-content > .content h2,
+  .site-content > .content h3,
+  .site-content > .content h4,
+  .site-content > .content hr,
+  .site-content > .content p,
+  .site-content > .content ul,
+  .site-content > .content ol,
+  .site-content > .content pre,
+  .site-content > .content blockquote {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+
+  .site-content > .content code,
+  .site-content > .content blockquote {
+    font-size: 100%;
+  }
+
+  .site-content > .content pre {
+    padding: 5px;
+  }
+
+  .site-content > .content img {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-content > .content img {
+    max-width: 100%;
+  }
+}
+
+
 /**
  * Site Abstract
  */
@@ -334,4 +479,10 @@ a:hover {
 .site-footer .license {
   font-size: 80%;
   color: #777;
+}
+
+@media (max-width: 1080px) {
+  .site-footer {
+    padding: 10px;
+  }
 }

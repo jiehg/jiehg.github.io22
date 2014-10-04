@@ -9,8 +9,9 @@ html, body {
 
 body {
   font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
-  font-size: 15px;
-  color: #333;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #556;
 }
 
 a, a:visited {
@@ -162,16 +163,17 @@ a:hover {
 .site-content > .content ol,
 .site-content > .content pre,
 .site-content > .content blockquote {
+  font-size: 120%;
   padding: 0;
-  margin: 15px 0;
-  line-height: 25px;
+  margin: 30px 0;
+  line-height: 30px;
 }
 
 .site-content > .content h2 {
   font-size: 170%;
   font-weight: normal;
   padding: 10px 0;
-  margin: 10px 0;
+  margin: 20px 0;
   border-bottom: 1px solid #E7E7E7;
 }
 

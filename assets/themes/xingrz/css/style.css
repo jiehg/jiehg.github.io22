@@ -231,6 +231,7 @@ a:hover {
 }
 
 .site-content > .content pre {
+  font-size: inherit;
   overflow: hidden;
   line-height: 20px;
   background: #F2F2F2;
@@ -246,6 +247,7 @@ a:hover {
 }
 
 .site-content > .content blockquote {
+  font-size: inherit;
   padding-left: 1.6em;
   padding-right: 2em;
   border-left: 0.4em solid #CCC;

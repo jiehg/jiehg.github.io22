@@ -280,6 +280,7 @@ a:hover {
 
 .site-abstract > header h1 a {
   color: #333;
+  border: none;
 }
 
 .site-abstract > .abstract {
@@ -292,16 +293,6 @@ a:hover {
 
 .site-abstract > .full h2 {
   font-size: 150%
-}
-
-.site-abstract > .full a {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  transition: border-bottom-color 500ms;
-}
-
-.site-abstract > .full a:hover {
-  border-bottom-color: #4080C0;
-  text-decoration: none;
 }
 
 .site-abstract > .full pre,

@@ -257,6 +257,10 @@ a:hover {
   font-size: inherit;
 }
 
+.site-content > .content img {
+  max-width: 60%;
+}
+
 .site-content > footer {
   border-top: 1px solid #DFDFDF;
   margin-top: 50px;

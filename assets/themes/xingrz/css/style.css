@@ -280,8 +280,9 @@ a:hover {
 
 .site-abstract > header h1 a {
   color: #333;
+  /* reset from .site-content > content */
   border: none !important;
-  transition: color 500ms;
+  transition: color 500ms !important;
 }
 
 .site-abstract > header h1 a:hover {

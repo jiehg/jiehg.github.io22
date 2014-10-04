@@ -97,7 +97,7 @@ function encrypt (buffer) {
               | (buffer[i] & 0x20) << 1
               | (buffer[i] & 0x10) >> 3
               | (buffer[i] & 0x08) << 4
-              | (buffer[i] & 0x04)
+              | (buffer[i] & 0x04) // 0  <- 明显这是强迫症
               | (buffer[i] & 0x02) >> 1
               | (buffer[i] & 0x01) << 4
   }

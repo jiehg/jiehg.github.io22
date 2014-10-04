@@ -273,7 +273,7 @@ a:hover {
 }
 
 .site-abstract > header {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .site-abstract > header h1 {
@@ -302,12 +302,12 @@ a:hover {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   font-size: 100% !important;
-  line-height: 1.0 !important;
+  line-height: 1.5 !important;
   color: #778;
 }
 
 .site-abstract > footer {
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 80%;
   color: #778;
 }

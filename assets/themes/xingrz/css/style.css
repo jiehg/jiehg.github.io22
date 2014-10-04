@@ -280,7 +280,12 @@ a:hover {
 
 .site-abstract > header h1 a {
   color: #333;
-  border: none;
+  border: none !important;
+  transition: color 500ms;
+}
+
+.site-abstract > header h1 a:hover {
+  color: #4080C0;
 }
 
 .site-abstract > .abstract {

@@ -163,10 +163,10 @@ a:hover {
 .site-content > .content ol,
 .site-content > .content pre,
 .site-content > .content blockquote {
-  font-size: 120%;
+  font-size: 110%;
   padding: 0;
   margin: 30px 0;
-  line-height: 30px;
+  line-height: 1.8;
 }
 
 .site-content > .content h2 {
@@ -272,6 +272,10 @@ a:hover {
   margin: 30px 0;
 }
 
+.site-abstract > header {
+  margin-bottom: 10px;
+}
+
 .site-abstract > header h1 {
   margin: 0;
   font-size: 140%;
@@ -289,6 +293,11 @@ a:hover {
   color: #4080C0;
 }
 
+.site-abstract > .abstract,
+.site-abstract > .full {
+  line-height: 1.0;
+}
+
 .site-abstract > .full > :not(:first-child),
 .site-abstract > .full > :not(p) {
   display: none !important;
@@ -302,6 +311,7 @@ a:hover {
 }
 
 .site-abstract > footer {
+  margin-top: 10px;
   font-size: 80%;
   color: #778;
 }

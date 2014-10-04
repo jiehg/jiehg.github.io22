@@ -35,6 +35,8 @@ AOSP 的编译有几点要求：
 
 存到哪个地方，点**创建**。这样你的镜像就建好了，以后 AOSP 的工作都在里面做就好了。用的时候双击 dmg 文件就可以挂载，用完之后直接推出。爽不？
 
+这么做还有一个好处，你要把整份源码带走的话直接拷 dmg 就是了。
+
 镜像挂载路径位于 `/Volumes/android`。
 
 ## 下载源代码
@@ -100,7 +102,7 @@ vagrant ssh
 
 ccache 可以将一些编译结果缓存起来，如果需要经常编译的话可以加快速度（但是第一次编译的速度会很慢）。
 
-因为我是把 android.dmg 丢到机械硬盘阵列里的，而我的 Macbook 是 SSD 的，所以当然要把 ccache 弄到 SSD 里对不！好在 Vagrant 可以除了工作目录外再映射一个目录到虚拟机里。
+因为我是把 `android.dmg` 丢到机械硬盘阵列里的，而我的 MacBook 是 SSD 的，所以当然要把 ccache 弄到 SSD 里对不！好在 Vagrant 可以除了工作目录外再映射一个目录到虚拟机里。
 
 首先，在你喜欢的地方建立一个存放 ccache 缓存的目录，比如 `~/ccache`。然后打开 `/Volumes/android/Vagrantfile`，它实际上是一个 Ruby 文件。找到 Synced Folder 的配置项：
 

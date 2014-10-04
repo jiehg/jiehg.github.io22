@@ -181,13 +181,11 @@ a:hover {
 .site-content > .content h3 {
   font-size: 120%;
   font-weight: normal;
-  padding: 10px 0;
-  margin: 10px 0;
+  margin: 0;
   border-bottom: 1px solid #E7E7E7;
 }
 
 .site-content > .content h4 {
-  font-size: 100%;
   font-weight: bold;
 }
 
@@ -208,7 +206,7 @@ a:hover {
 
 .site-content > .content ul li,
 .site-content > .content ol li {
-  padding: 5px 0;
+  padding: 0;
   margin: 0;
 }
 

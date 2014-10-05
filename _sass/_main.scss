@@ -308,6 +308,14 @@ a:hover {
   margin: 0;
 }
 
+.site-content > .content li > p,
+.site-content > .content li > pre,
+.site-content > .content li > blockquote {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
 .site-content > .content a {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   transition: border-bottom-color 500ms;

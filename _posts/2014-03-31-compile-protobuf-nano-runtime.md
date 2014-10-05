@@ -87,29 +87,29 @@ protoc --java_out=src/main/java -I../src ../src/google/protobuf/descriptor.proto
 1. 掏出你的 IntelliJ IDEA
 2. 点开 **File / Project Structure...**
 
-  ![](https://cloud.githubusercontent.com/assets/288288/2560229/b3644106-b7b3-11e3-87da-299fa2286157.png)
+    ![](https://cloud.githubusercontent.com/assets/288288/2560229/b3644106-b7b3-11e3-87da-299fa2286157.png)
 
 3. 选 **Modules**，点 **+** 号，**Import Module**
 
-  ![](https://cloud.githubusercontent.com/assets/288288/2560231/fd845154-b7b3-11e3-9666-5e15a2eb4a80.png)
+    ![](https://cloud.githubusercontent.com/assets/288288/2560231/fd845154-b7b3-11e3-9666-5e15a2eb4a80.png)
 
 4. 选择刚刚检出的 `android-protobuf/` 目录下的 `java/` 目录
 
-  ![](https://cloud.githubusercontent.com/assets/288288/2560235/35b1743a-b7b4-11e3-8a7b-095fa0736dfd.png)
+    ![](https://cloud.githubusercontent.com/assets/288288/2560235/35b1743a-b7b4-11e3-8a7b-095fa0736dfd.png)
 
 5. **Import module from external model**，**Maven**
 
-  ![](https://cloud.githubusercontent.com/assets/288288/2560237/61cf1d38-b7b4-11e3-8e4b-abf5454ec6a0.png)
+    ![](https://cloud.githubusercontent.com/assets/288288/2560237/61cf1d38-b7b4-11e3-8e4b-abf5454ec6a0.png)
 
 6. **Next**
 7. 三个可选的运行时版本，需要的话就选上吧。
 
-  ![ ](https://cloud.githubusercontent.com/assets/288288/2560239/8bc33a84-b7b4-11e3-802b-b64bfced3c51.png)
+    ![](https://cloud.githubusercontent.com/assets/288288/2560239/8bc33a84-b7b4-11e3-802b-b64bfced3c51.png)
 
 8. **Next**，**Next**，**Finish**
 9. 回到 **Project Structure / Modules**，点右边下面的 **+** 号，**Module Dependency...**
 
-  ![](https://cloud.githubusercontent.com/assets/288288/2560244/ce84ab32-b7b4-11e3-8fde-cc21a7019725.png)
+    ![](https://cloud.githubusercontent.com/assets/288288/2560244/ce84ab32-b7b4-11e3-8fde-cc21a7019725.png)
 
 10. 选刚刚导入进工作区的 `protobuf-java` 模块，**OK**
 11. 搞定咯

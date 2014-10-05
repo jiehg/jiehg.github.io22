@@ -6,6 +6,9 @@ exclude: [ ".gitignore", "README.md", "CNAME" ]
 markdown: redcarpet
 highlighter: pygments
 
+sass:
+    style: :compressed
+
 url: "http://xingrz.us"
 
 disqus_short_name: 'xingrz'

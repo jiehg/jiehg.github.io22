@@ -2,7 +2,8 @@ title: XiNGRZ's
 permalink: /:year/:year-:month-:day/:title.html
 
 exclude: [ ".gitignore", "README.md", "CNAME" ]
-markdown: kramdown
+
+markdown: redcarpet
 highlighter: pygments
 
 url: "http://xingrz.us"

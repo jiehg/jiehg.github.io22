@@ -337,7 +337,7 @@ a:hover {
 
 .site-content > .content pre {
   font-size: inherit;
-  overflow: scroll;
+  overflow-x: scroll;
   line-height: 20px;
   background: #F2F2F2;
   border-radius: 2px;

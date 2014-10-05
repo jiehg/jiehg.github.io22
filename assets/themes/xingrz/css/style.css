@@ -406,6 +406,10 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  .site-content > .content code {
+    font-size: 90%;
+  }
+
   .site-content > .content img {
     max-width: 100%;
   }

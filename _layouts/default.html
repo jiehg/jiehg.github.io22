@@ -17,20 +17,16 @@
       <div class="brand"><a href="/">{{ site.title }}</a></div>
       <nav>
         <ul>
-{%  for node in site.pages %}
-{%    if node.title != null and node.group == 'navigation' %}
-{%      if node.categories and page.categories %}
+{% for node in site.pages %}{% if node.title != null and node.group == 'navigation' %}{% if node.categories and page.categories %}
           <li class="active">
             <a href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a>
             <ul>{% for category in site.categories %}
               <li{% if page.categories.first == category.first %} class="active"{% endif %}><a href="{{ BASE_PATH }}{{ node.url }}#{{ category.first }}-ref">{{ category.first }}</a></li>{% endfor %}
             </ul>
           </li>
-{%      else %}
+{% else %}
           <li{% if page.url == node.url %} class="active"{% endif %}><a href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a></li>
-{%      endif %}
-{%    endif %}
-{%  endfor %}
+{% endif %}{% endif %}{% endfor %}
         </ul>
       </nav>
     </header>

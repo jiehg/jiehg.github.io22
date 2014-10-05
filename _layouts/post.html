@@ -1,21 +1,21 @@
 ---
 layout: default
 ---
-<article class="site-content">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <time pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y/%m/%d' }}</time>
-    <ul class="tags">{% for tag in page.tags %}
-      <li><a href="/tags.html#{{ tag }}-ref">{{ tag }}</a></li>{% endfor %}
-    </ul>
-  </header>
-  <div class="content">
+      <article class="site-content">
+        <header>
+          <h1>{{ page.title }}</h1>
+          <time pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y/%m/%d' }}</time>
+          <ul class="tags">{% for tag in page.tags %}
+            <li><a href="/tags.html#{{ tag }}-ref">{{ tag }}</a></li>{% endfor %}
+          </ul>
+        </header>
+        <div class="content">
 {{ content }}
-  </div>
-  <footer>
-    <div id="disqus_thread"></div>
-    <script src="//{{ site.disqus_short_name }}.disqus.com/embed.js"></script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </footer>
-</article>
+        </div>
+        <footer>
+          <div id="disqus_thread"></div>
+          <script src="//{{ site.disqus_short_name }}.disqus.com/embed.js"></script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </footer>
+      </article>

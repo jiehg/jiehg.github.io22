@@ -4,16 +4,14 @@ title: 首页
 tagline: 有时发博客，有时发牢骚。
 ---
 {% for post in site.posts limit 100 %}
-    <article class="site-abstract">
-      <header>
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      </header>
-      <div class="abstract">
-{{ post.excerpt }}
-      </div>
-      <footer>
-        发表于 <time pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time>
-        <a href="{{ BASE_PATH }}{{ post.url }}">阅读全文</a>
-      </footer>
-    </article>
-{% endfor %}
+          <article class="site-abstract">
+            <header>
+              <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            </header>
+            <div class="abstract">
+              {{ post.excerpt }}            </div>
+            <footer>
+              发表于 <time pubdate datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time>
+              <a href="{{ post.url }}">阅读全文</a>
+            </footer>
+          </article>{% endfor %}

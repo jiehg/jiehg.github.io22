@@ -22,9 +22,9 @@
       <nav>
         <ul>
 {%  for node in site.pages %}
-{%    if node.title != null and node.group == "navigation" %}
-{%      if node.url == site.JB.categories_path and page.categories %}
-          <li{% if page.url == node.url %} class="active"{% endif %}>
+{%    if node.title != null and node.group == 'navigation' %}
+{%      if node.categories and page.categories %}
+          <li class="active">
             <a href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a>
             <ul>{% for category in site.categories %}
               <li{% if page.categories.first == category.first %} class="active"{% endif %}><a href="{{ BASE_PATH }}{{ node.url }}#{{ category.first }}-ref">{{ category.first }}</a></li>{% endfor %}

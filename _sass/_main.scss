@@ -67,21 +67,21 @@ a:hover {
 
 .site-header nav ul > li > a {
   display: block;
-  padding: 0 50px;
+  padding: 0 3em;
   line-height: 50px;
   color: #777;
   transition: background-color 500ms;
 }
 
 .site-header nav ul > li.active {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.02);
   color: #4080C0;
   border-left: 5px solid rgba(64, 128, 192, 0.6);
   margin-left: -5px;
 }
 
 .site-header nav ul > li > a:hover {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.02);
   color: #4080C0;
   text-decoration: none;
 }
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .site-header nav ul > li > ul > li > a {
-  padding-left: 80px;
+  padding-left: 5em;
   font-size: 95%;
 }
 

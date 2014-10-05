@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 {%  if page.url == "/index.html" and page.tagline != null %}
     <title>{{ site.title }} :: {{ page.tagline }}</title>
 {%  else %}
     <title>{{ page.title }} :: {{ site.title }}</title>
 {%  endif %}
-
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>

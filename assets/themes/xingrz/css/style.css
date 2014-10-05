@@ -443,17 +443,17 @@ a:hover {
   color: #4080C0;
 }
 
-.site-abstract > .full > :not(:first-child),
-.site-abstract > .full > :not(p) {
-  display: none !important;
-}
-
 .site-abstract > .full > * {
+  display: none !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   font-size: 100% !important;
   line-height: 1.5 !important;
   color: #778;
+}
+
+.site-abstract > .full > p:first-of-type {
+  display: block !important;
 }
 
 .site-abstract > footer {

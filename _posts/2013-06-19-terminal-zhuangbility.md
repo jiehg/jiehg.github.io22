@@ -5,7 +5,7 @@ tags: [iTerm2, zsh, shell]
 title: 折腾了一下 Terminal
 ---
 
-![装逼的终端](/attachs/iterm2-zsh-agnoster-git.png)
+![装逼的终端](http://xingrz.us/attachs/iterm2-zsh-agnoster-git.png)
 
 闲来无事折腾一下工作环境。
 

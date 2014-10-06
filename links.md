@@ -20,3 +20,8 @@ group: navigation
 
 - **[Android Developers](https://developer.android.com/develop)** - Android 开发者官网，官方的各种参考资料
 - **[Square](http://square.github.io/)** - 一个很屌的组织，开源了 [Retrofit](/tags.html#Retrofit-ref) / Picasso / Otto 等很屌的 Java / Android 库
+
+## 本站
+
+{% for node in site.pages %}{% if node.title != null and (node.group == null or node.group == 'navigation') %}
+  - [{{node.title}}]({{node.url}}){% endif %}{% endfor %}

@@ -1,8 +1,0 @@
----
-layout: page
-title: 页面
-group: navigation
----
-    <ul>{% for node in site.pages %}{% if node.title != null and (node.group == null or node.group == 'navigation') %}
-      <li><a href="{{node.url}}">{{node.title}}</a></li>{% endif %}{% endfor %}
-    </ul>

@@ -1,5 +1,5 @@
 ---
-title : 站点地图
+title : 地图
 ---
 {% for page in site.pages %}
 {{site.url}}{{ page.url }}{% endfor %}

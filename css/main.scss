@@ -3,7 +3,10 @@
 
 @charset "utf-8";
 
-@import
-        "main",
-        "syntax-highlighting"
-;
+$san-serif: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei',
+            '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+
+$primary-color: #4080C0;
+
+@import "main",
+        "syntax-highlighting";

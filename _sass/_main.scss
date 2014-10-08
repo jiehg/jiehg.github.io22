@@ -4,19 +4,15 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+  font-family: $san-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   color: #556;
 }
 
 a, a:visited {
-  color: #4080C0;
+  color: $primary-color;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 960px) {
@@ -40,19 +36,19 @@ a:hover {
 
 .site-header .brand {
   font-size: 200%;
+  background: $primary-color;
 }
 
 .site-header .brand > a {
   display: block;
   text-align: center;
   line-height: 100px;
-  background: #4080C0;
   color: #FFF;
-  text-decoration: none;
+  transition: background 500ms;
 }
 
 .site-header .brand > a:hover {
-  background: #4585C5;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .site-header nav ul {
@@ -75,15 +71,14 @@ a:hover {
 
 .site-header nav ul > li.active {
   background: rgba(0, 0, 0, 0.02);
-  color: #4080C0;
+  color: $primary-color;
   border-left: 5px solid rgba(64, 128, 192, 0.6);
   margin-left: -5px;
 }
 
 .site-header nav ul > li > a:hover {
   background-color: rgba(0, 0, 0, 0.02);
-  color: #4080C0;
-  text-decoration: none;
+  color: $primary-color;
 }
 
 .site-header nav ul > li > ul {
@@ -112,7 +107,7 @@ a:hover {
   .site-header .brand {
     float: left;
     width: 200px;
-    border-bottom: 5px solid #4080C0;
+    border-bottom: 5px solid $primary-color;
     margin-bottom: -5px;
   }
 
@@ -214,7 +209,6 @@ a:hover {
 
 .site-content > header {
   display: block;
-  border-bottom: 1px solid #DFDFDF;
   padding-bottom: 10px;
   min-height: 69px;
 }
@@ -269,9 +263,8 @@ a:hover {
 }
 
 .site-content > .content h2 {
-  font-size: 170%;
+  font-size: 160%;
   font-weight: normal;
-  padding: 10px 0;
   margin: 20px 0;
   border-bottom: 1px solid #E7E7E7;
 }
@@ -326,14 +319,13 @@ a:hover {
   line-height: 1.5;
 }
 
-.site-content > .content a {
+.site-content > .content p a {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   transition: border-bottom-color 500ms;
 }
 
-.site-content > .content a:hover {
-  border-bottom-color: #4080C0;
-  text-decoration: none;
+.site-content > .content p a:hover {
+  border-bottom-color: $primary-color;
 }
 
 .site-content > .content code {
@@ -450,7 +442,7 @@ a:hover {
 }
 
 .site-abstract > header h1 a:hover {
-  color: #4080C0;
+  color: $primary-color;
 }
 
 .site-abstract > .abstract > :not(p) {

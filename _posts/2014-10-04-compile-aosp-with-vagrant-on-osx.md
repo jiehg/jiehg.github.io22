@@ -27,7 +27,7 @@ AOSP 的编译有几点要求：
 
 打开**应用程序 / 实用工具 / 磁盘工具**，点**新建映像**，照着填好了：
 
-![新建映像](http://xingrz.us/attachs/aosp-partition-image.png)
+![新建映像]({{ site.url }}/attachs/aosp-partition-image.png)
 
 - 名称 **android**
 - 大小 **40 GB**

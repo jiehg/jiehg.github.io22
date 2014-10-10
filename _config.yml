@@ -9,7 +9,7 @@ highlighter: pygments
 sass:
     style: :compressed
 
-url: "http://xingrz.us"
+url: "http://xingrz.me"
 
 disqus_short_name: 'xingrz'
 

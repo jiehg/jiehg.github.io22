@@ -23,20 +23,22 @@
       display: inline;
     }
 
+    a {
+      font-size: 85%;
+      color: #AAA;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     ul.tags {
       list-style: none;
       margin: 0;
       padding: 0;
       display: inline;
-      float: right;
 
       li {
         display: inline;
-
-        a {
-          font-size: 80%;
-          color: #BBB;
-        }
       }
     }
   }
@@ -83,7 +85,7 @@
       &.inline {
         list-style: none;
         padding-left: 0;
-      
+
         li {
           display: inline-block;
         }
@@ -94,7 +96,7 @@
         margin: 0;
       }
     }
-    
+
     li {
       > p,
       > pre,
@@ -109,7 +111,7 @@
       a {
         border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         transition: border-bottom-color 500ms;
-        
+
         &:hover {
           border-bottom-color: $primary-color;
         }
@@ -173,15 +175,15 @@
         margin: 10px 0;
         line-height: 1.5;
       }
-  
+
       code, blockquote {
         font-size: 100%;
       }
-    
+
       pre {
         padding: 5px;
       }
-    
+
       img {
         max-width: 600px;
       }
@@ -193,7 +195,7 @@
       code {
         font-size: 90%;
       }
-  
+
       img {
         max-width: 100%;
       }

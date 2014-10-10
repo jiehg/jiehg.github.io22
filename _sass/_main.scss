@@ -330,7 +330,7 @@ a, a:visited {
 }
 
 .site-content > .content code {
-  font-family: 'Ubuntu Mono', Consolas, 'Liberation Mono', Courier, monospace;
+  font-family: $monospace;
   font-size: 90%;
   background: #F2F2F2;
   border-radius: 2px;

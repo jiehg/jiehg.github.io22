@@ -7,15 +7,15 @@
   padding: 10px 50px 10px 350px;
   background: #FFF;
   border-top: 1px solid #EEE;
-}
+  
+  .license {
+    font-size: 80%;
+    color: #777;
+  }
 
-.site-footer .license {
-  font-size: 80%;
-  color: #777;
-}
-
-@media (max-width: 1080px) {
-  .site-footer {
-    padding: 10px;
+  @media (max-width: 1080px) {
+    & {
+      padding: 10px;
+    }
   }
 }

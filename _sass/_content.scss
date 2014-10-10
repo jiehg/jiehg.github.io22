@@ -44,7 +44,10 @@
   }
 
   .content {
-    p {
+    h2, h3, h4,
+    hr, p,
+    ol, ul,
+    pre, blockquote {
       font-size: 110%;
       padding: 0;
       margin: 30px 0;
@@ -52,7 +55,6 @@
     }
 
     h2 {
-      @extend p;
       font-size: 160%;
       font-weight: normal;
       margin: 20px 0;
@@ -60,7 +62,6 @@
     }
 
     h3 {
-      @extend p;
       font-size: 120%;
       font-weight: normal;
       margin: 0;
@@ -68,12 +69,10 @@
     }
 
     h4 {
-      @extend p;
       font-weight: bold;
     }
 
     hr {
-      @extend p;
       display: block;
       height: 4px;
       border: none;
@@ -81,7 +80,6 @@
     }
 
     ul, ol {
-      @extend p;
       padding-left: 2em;
 
       &.inline {
@@ -129,7 +127,6 @@
     }
 
     pre {
-      @extend p;
       font-size: inherit;
       overflow-x: scroll;
       line-height: 20px;
@@ -145,7 +142,6 @@
     }
 
     blockquote {
-      @extend p;
       font-size: 90%;
       padding-left: 1.6em;
       padding-right: 2em;

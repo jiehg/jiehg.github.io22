@@ -163,46 +163,42 @@
     margin-top: 50px;
     padding-top: 20px;
   }
-}
 
-@media (max-width: 1080px) {
-  .site-content {
+  @media (max-width: 1080px) {
     max-width: none;
+
+    > .content {
+      h2, h3, h4,
+      hr, p,
+      ol, ul,
+      pre, blockquote {
+        margin: 10px 0;
+        line-height: 1.5;
+      }
+  
+      code, blockquote {
+        font-size: 100%;
+      }
+    
+      pre {
+        padding: 5px;
+      }
+    
+      img {
+        max-width: 600px;
+      }
+    }
   }
 
-  .site-content > .content h2,
-  .site-content > .content h3,
-  .site-content > .content h4,
-  .site-content > .content hr,
-  .site-content > .content p,
-  .site-content > .content ul,
-  .site-content > .content ol,
-  .site-content > .content pre,
-  .site-content > .content blockquote {
-    margin: 10px 0;
-    line-height: 1.5;
-  }
-
-  .site-content > .content code,
-  .site-content > .content blockquote {
-    font-size: 100%;
-  }
-
-  .site-content > .content pre {
-    padding: 5px;
-  }
-
-  .site-content > .content img {
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 600px) {
-  .site-content > .content code {
-    font-size: 90%;
-  }
-
-  .site-content > .content img {
-    max-width: 100%;
+  @media (max-width: 600px) {
+    > .content {
+      code {
+        font-size: 90%;
+      }
+  
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }

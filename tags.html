@@ -3,12 +3,17 @@ layout: page
 title: 标签
 group: navigation
 ---
-    <ul class="inline">{% for tag in site.tags %}
-      <li><a href="#{{ tag[0] }}-ref">{{ tag[0] }} <small>{{ tag[1].size }}</small></a></li>{% endfor %}
-    </ul>
+          <ul class="inline">{% for tag in site.tags %}
+            <li><a href="#{{ tag[0] }}">{{ tag[0] }} <small>{{ tag[1].size }}</small></a></li>{% endfor %}
+          </ul>
 {% for tag in site.tags %}
-    <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-    <ul>{% for node in tag[1] %}{% if node.title != null %}
-        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>{% endif %}{% endfor %}
-    </ul>
+          <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+          <ul>
+{% for post in tag[1] %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <small>{{ post.date | date: "%Y/%m/%d" }}</small>
+            </li>
+{% endfor %}
+          </ul>
 {% endfor %}

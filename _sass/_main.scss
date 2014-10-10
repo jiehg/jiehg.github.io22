@@ -71,9 +71,12 @@ a, a:visited {
 
 .site-header nav ul > li.active {
   background: rgba(0, 0, 0, 0.02);
-  color: $primary-color;
-  border-left: 5px solid rgba(64, 128, 192, 0.6);
+  border-left: 5px solid $primary-color;
   margin-left: -5px;
+}
+
+.site-header nav ul > li.active > a {
+  color: $primary-color;
 }
 
 .site-header nav ul > li > a:hover {
@@ -83,6 +86,10 @@ a, a:visited {
 
 .site-header nav ul > li > ul {
   padding: 0;
+}
+
+.site-header nav ul > li > ul > li.active {
+  border-left: 5px solid darken($primary-color, 6%);
 }
 
 .site-header nav ul > li > ul > li > a {
@@ -130,7 +137,7 @@ a, a:visited {
   .site-header nav ul > li.active {
     border-left: none;
     margin-left: 0;
-    border-bottom: 5px solid rgba(64, 128, 192, 0.6);
+    border-bottom: 5px solid $primary-color;
     margin-bottom: -5px;
   }
 
@@ -142,6 +149,11 @@ a, a:visited {
   .site-header nav ul > li > ul {
     background-color: rgba(0, 0, 0, 0.05);
     display: inline-block;
+  }
+
+  .site-header nav ul > li > ul > li.active {
+    border-left: none;
+    border-bottom: 5px solid darken($primary-color, 6%);
   }
 
   .site-header nav ul > li > ul > li > a {

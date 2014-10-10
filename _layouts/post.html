@@ -6,7 +6,7 @@ layout: default
           <h1>{{ page.title }}</h1>
           <time pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y/%m/%d' }}</time>
           <ul class="tags">{% for tag in page.tags %}
-            <li><a href="/tags.html#{{ tag }}-ref">{{ tag }}</a></li>{% endfor %}
+            <li><a href="/tags.html#{{ tag }}">{{ tag }}</a></li>{% endfor %}
           </ul>
         </header>
         <div class="content">

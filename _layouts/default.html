@@ -19,7 +19,7 @@
           <li class="active">
             <a href="{{ node.url }}">{{ node.title }}</a>
             <ul>{% for category in site.categories %}
-              <li{% if page.categories.first == category.first %} class="active"{% endif %}><a href="{{ node.url }}#{{ category[0] }}">{{ category[0] }}</a></li>{% endfor %}
+              <li{% if page.categories.first == category[0] %} class="active"{% endif %}><a href="{{ node.url }}#{{ category[0] }}">{{ category[0] }}</a></li>{% endfor %}
             </ul>
           </li>
 {% else %}

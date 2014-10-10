@@ -287,9 +287,6 @@ a, a:visited {
   background: #DFDFDF;
 }
 
-.site-content > .content p {
-}
-
 .site-content > .content ul,
 .site-content > .content ol {
   padding-left: 2em;
@@ -319,13 +316,17 @@ a, a:visited {
   line-height: 1.5;
 }
 
-.site-content > .content p a {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  transition: border-bottom-color 500ms;
-}
-
-.site-content > .content p a:hover {
-  border-bottom-color: $primary-color;
+.site-content > .content {
+  p, li {
+    a {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      transition: border-bottom-color 500ms;
+      
+      &:hover {
+        border-bottom-color: $primary-color;
+      }
+    }
+  }
 }
 
 .site-content > .content code {

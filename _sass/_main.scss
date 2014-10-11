@@ -13,6 +13,12 @@ body {
 a, a:visited {
   color: $primary-color;
   text-decoration: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: border-bottom-color 500ms;
+
+  &:hover {
+    border-bottom-color: $primary-color;
+  }
 }
 
 @media (max-width: 960px) {
@@ -32,6 +38,10 @@ a, a:visited {
   width: 250px;
   background: #FFF;
   border-bottom: 5px solid #EEE;
+}
+
+.site-header a {
+  border-bottom: none;
 }
 
 .site-header .brand {
@@ -233,9 +243,8 @@ a, a:visited {
 
 .site-abstract > header h1 a {
   color: #556;
-  /* reset from .site-content > content */
-  border: none !important;
-  transition: color 500ms !important;
+  border-bottom: none;
+  transition: color 500ms;
 }
 
 .site-abstract > header h1 a:hover {
@@ -261,7 +270,7 @@ a, a:visited {
 }
 
 .site-abstract > footer a {
-  border: none !important;
+  border-bottom: none;
 }
 
 

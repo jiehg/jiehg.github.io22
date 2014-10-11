@@ -26,6 +26,7 @@
     a {
       font-size: 85%;
       color: #AAA;
+      border-bottom: none;
       &:hover {
         text-decoration: underline;
       }
@@ -104,17 +105,6 @@
         margin-top: 0;
         margin-bottom: 10px;
         line-height: 1.5;
-      }
-    }
-
-    p, li {
-      a {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        transition: border-bottom-color 500ms;
-
-        &:hover {
-          border-bottom-color: $primary-color;
-        }
       }
     }
 

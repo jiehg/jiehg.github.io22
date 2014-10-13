@@ -7,7 +7,7 @@ title: 又是一些 Express.js Middleware
 
 实习一个多月，天天对着 Node.js，总该思考点什么了。
 
-[Express.js](expressjs.com) 框架的 Middleware 机制设计得很巧妙。实际上，HTTP 请求是交给下一层的 Connect 处理的，Express.js 在其上丰富了 API。Express.js 的 Middleware 实际上是一套统一接口的处理函数，HTTP 请求被 Node.js 的 HTTP Server 模块接收，由 Connect 负责诸如 POST Body、Querystring、Cookie 之类的解析，然后经由 Express.js 逐个 Middleware 处理，一个 Middleware 处理完就丢给下一个 Middleware，直到到达开发者的业务代码（当然也有的还没到这里已经被返回了，比如静态文件）。
+[Express.js](http://expressjs.com) 框架的 Middleware 机制设计得很巧妙。实际上，HTTP 请求是交给下一层的 Connect 处理的，Express.js 在其上丰富了 API。Express.js 的 Middleware 实际上是一套统一接口的处理函数，HTTP 请求被 Node.js 的 HTTP Server 模块接收，由 Connect 负责诸如 POST Body、Querystring、Cookie 之类的解析，然后经由 Express.js 逐个 Middleware 处理，一个 Middleware 处理完就丢给下一个 Middleware，直到到达开发者的业务代码（当然也有的还没到这里已经被返回了，比如静态文件）。
 
 备个忘，近期想抽时间把玩一下的 Express.js (Connect) [Middleware](https://github.com/senchalabs/connect/wiki)：
 

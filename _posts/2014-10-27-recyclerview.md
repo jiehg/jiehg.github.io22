@@ -7,7 +7,7 @@ title: 初探 RecyclerView Adapter
 
 最近 Android 5.0 SDK (API 21) 发布了，正好 [CNode 开放了 API](https://cnodejs.org/api)，写了个应用练练手。
 
-完整的项目在这里：https://github.com/xingrz/cnode-android
+完整的项目在这里：[xingrz/cnode-android](https://github.com/xingrz/cnode-android)
 
 ## 引入
 

@@ -10,7 +10,7 @@ title: RecyclerView 列表项动画
   <source type="video/mp4" src="{{ site.url }}/attachs/recycler-view-item-animation.mp4">
 </video>
 
-> 上面是个视频，WebM。
+> 上面是个视频，WebM 和 H.264。
 
 正当我还在为毕业设计和两个课程大作业烦得焦头烂额之际…我又忍不住[写了几行代码](https://github.com/xingrz/cnode-android/commit/915f6b2b177700c73b8fad91cc2f461f26b9f909)。
 

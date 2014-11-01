@@ -5,7 +5,10 @@ tags: [Android, RecyclerView]
 title: RecyclerView 列表项动画
 ---
 
-<video src="{{ site.url }}/attachs/recycler-view-item-animation.webm" autoplay loop />
+<video autoplay loop>
+  <source type="video/webm" src="{{ site.url }}/attachs/recycler-view-item-animation.webm">
+  <source type="video/mp4" src="{{ site.url }}/attachs/recycler-view-item-animation.mp4">
+</video>
 
 > 上面是个视频，WebM。
 

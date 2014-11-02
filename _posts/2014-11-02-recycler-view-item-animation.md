@@ -35,12 +35,48 @@ topicsView.setItemAnimator(new DefaultItemAnimator());
 /* ... */
 
 @Override
+public void add(int location, E object) {
+    synchronized (lock) {
+        list.add(location, object);
+        notifyItemInserted(location);
+    }
+}
+
+@Override
+public boolean add(E object) {
+    synchronized (lock) {
+        int lastIndex = list.size();
+        if (list.add(object)) {
+            notifyItemInserted(lastIndex);
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+@Override
+public boolean addAll(int location, Collection<? extends E> collection) {
+    synchronized (lock) {
+        if (list.addAll(location, collection)) {
+            notifyItemRangeInserted(location, collection.size());
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+@Override
 public boolean addAll(Collection<? extends E> collection) {
-    if (list.addAll(collection)) {
-        notifyItemRangeInserted(list.size() - 1, collection.size());
-        return true;
-    } else {
-        return false;
+    synchronized (lock) {
+        int lastIndex = list.size();
+        if (list.addAll(collection)) {
+            notifyItemRangeInserted(lastIndex, collection.size());
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 

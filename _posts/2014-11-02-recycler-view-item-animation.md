@@ -29,7 +29,7 @@ topicsView.setItemAnimator(new DefaultItemAnimator());
 - `notifyItemMoved(from, to)`
 - ...
 
-然后呢…考虑到 `RecyclerView` 目前就只有一个十分基本的 `RecyclerView.Adapter`，作为一个不折腾不舒服星人 `_(:зゝ∠)_`，于是我自己仿照 `ArrayAdapter` 的做法用 [`List<E>`](https://developer.android.com/reference/java/util/List.html) 接口实现了一个 [`ArrayRecyclerAdapter`](https://github.com/xingrz/cnode-android/blob/master/CNode/src/main/java/org/cnodejs/widget/ArrayRecyclerAdapter.java)，里面将这些方法都封装好了。
+然后呢…考虑到 `RecyclerView` 目前就只有一个十分基本的 `RecyclerView.Adapter`，作为一个不折腾不舒服星人 `_(:зゝ∠)_`，于是我自己仿照 `ArrayAdapter` 的做法用 [`List<E>`](https://developer.android.com/reference/java/util/List.html) 接口实现了一个 [`ArrayRecyclerAdapter`](https://github.com/xingrz/cnode-android/blob/develop/CNode/src/main/java/org/cnodejs/widget/ArrayRecyclerAdapter.java)，里面将这些方法都封装好了。
 
 ```java
 /* ... */

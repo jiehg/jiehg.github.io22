@@ -49,7 +49,6 @@
     hr, p,
     ol, ul,
     pre, blockquote {
-      font-size: 110%;
       padding: 0;
       margin: 30px 0;
       line-height: 1.8;
@@ -70,18 +69,17 @@
     }
 
     h4 {
+      font-size: 110%;
       font-weight: bold;
     }
 
-    hr {
-      display: block;
-      height: 4px;
-      border: none;
-      background: #DFDFDF;
+    p {
+      font-size: 110%;
     }
 
     ul, ol {
       padding-left: 2em;
+      font-size: 100%;
 
       &.inline {
         list-style: none;
@@ -90,21 +88,6 @@
         li {
           display: inline-block;
         }
-      }
-
-      li {
-        padding: 0;
-        margin: 0;
-      }
-    }
-
-    li {
-      > p,
-      > pre,
-      > blockquote {
-        margin-top: 0;
-        margin-bottom: 10px;
-        line-height: 1.5;
       }
     }
 
@@ -117,7 +100,6 @@
     }
 
     pre {
-      font-size: inherit;
       overflow-x: scroll;
       line-height: 20px;
       background: #F2F2F2;
@@ -141,10 +123,39 @@
       * {
         font-size: inherit;
       }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 1.3;
+      }
     }
 
     img {
       max-width: 60%;
+    }
+
+    hr {
+      display: block;
+      height: 4px;
+      border: none;
+      background: #DFDFDF;
+    }
+
+    li {
+      &,
+      > p,
+      > pre,
+      > blockquote {
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        font-size: inherit;
+      }
+
+      > blockquote {
+        font-size: 90%;
+      }
     }
   }
 

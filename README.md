@@ -1,4 +1,4 @@
-XiNGRZ's
+Jie's
 ==========
 
 Originally based on [Jekyll-Bootstrap](https://github.com/plusjade/jekyll-bootstrap).

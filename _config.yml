@@ -1,4 +1,4 @@
-title: XiNGRZ's
+title: Jie's
 permalink: /:year/:year-:month-:day/:title.html
 
 exclude: [ ".gitignore", "README.md", "CNAME" ]
@@ -9,8 +9,8 @@ highlighter: pygments
 sass:
     style: :compressed
 
-url: "http://xingrz.me"
+# url: "http://xingrz.me"
 
-disqus_short_name: 'xingrz'
+# disqus_short_name: 'xingrz'
 
-google_tracking_id: 'UA-25258167-6'
+# google_tracking_id: 'UA-25258167-6'
